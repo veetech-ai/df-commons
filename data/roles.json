@@ -1,0 +1,35 @@
+{
+  "roles": [
+    {
+      "title": "superAdmin",
+      "name": "superAdmin",
+      "type": "nonOrg"
+    },
+    {
+      "title": "admin",
+      "name": "admin",
+      "type": "nonOrg"
+    },
+    {
+      "title": "customer",
+      "name": "customer",
+      "type": "org"
+    },
+    {
+      "title": "ceo",
+      "name": "ceo",
+      "type": "org"
+    },
+    {
+      "title": "operator",
+      "name": "operator",
+      "type": "org"
+    },
+    {
+      "title": "device",
+      "name": "device",
+      "type": "org",
+      "description": "A role type to do devices operations e.g. Add new Device, upload data from device, get data for devices etc."
+    }
+  ]
+}

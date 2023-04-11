@@ -1,0 +1,26 @@
+[
+  {
+    "code": 0,
+    "name": "completed"
+  },
+  {
+    "code": 1,
+    "name": "error"
+  },
+  {
+    "code": 2,
+    "name": "cancelled"
+  },
+  {
+    "code": 3,
+    "name": "rejected-no-fibers"
+  },
+  {
+    "code": 4,
+    "name": "rejected-less-than-12-fibers"
+  },
+  {
+    "code": 5,
+    "name": "rejected-bad-lighting"
+  }
+]

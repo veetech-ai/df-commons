@@ -1,0 +1,30 @@
+[
+  {
+    "code": 0,
+    "name": "batteryCharging",
+    "value": false,
+    "category": "info",
+    "description": "Battery Charging"
+  },
+  {
+    "code": 1,
+    "name": "batteryCharged",
+    "value": false,
+    "category": "info",
+    "description": "Battery Charged"
+  },
+  {
+    "code": 2,
+    "name": "vbatAlert",
+    "value": false,
+    "category": "warning",
+    "description": "Vbat Alert"
+  },
+  {
+    "code": 3,
+    "name": "noCharging",
+    "value": false,
+    "category": "error",
+    "description": "No Charging"
+  }
+]

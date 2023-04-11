@@ -1,0 +1,26 @@
+{
+  "description": "Categories of alerts",
+  "alertCategories": [
+    {
+      "name": "error",
+      "indicationField": "fi",
+      "description": "Errors",
+      "tooltipClass": "tooltip_class_danger",
+      "icon": "fa fa-warning"
+    },
+    {
+      "name": "warning",
+      "indicationField": "wi",
+      "description": "Warnings",
+      "tooltipClass": "tooltip_class_warning",
+      "icon": "fa fa-warning"
+    },
+    {
+      "name": "info",
+      "indicationField": "ii",
+      "description": "General information",
+      "tooltipClass": "tooltip_class_primary",
+      "icon": "fa fa-info-circle"
+    }
+  ]
+}

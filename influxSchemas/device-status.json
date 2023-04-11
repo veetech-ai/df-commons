@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "properties": {
+    "measurement": {
+      "const": "status_data",
+      "type": "string"
+    },
+    "tags": {
+      "type": "object",
+      "properties": {
+        "deviceId": {
+          "type": "string"
+        }
+      },
+      "required": ["deviceId"]
+    },
+    "fields": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "number"
+        }
+      },
+      "required": ["status"]
+    },
+    "timestamp": {
+      "type": "number"
+    }
+  },
+  "required": ["measurement", "tags", "fields", "timestamp"]
+}

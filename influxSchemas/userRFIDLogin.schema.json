@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "measurement": {
+      "const": "user_login_info",
+      "type": "string"
+    },
+    "tags": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string"
+        },
+        "deviceId": {
+          "type": "string"
+        }
+      },
+      "required": ["userId", "deviceId"]
+    },
+    "fields": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "number"
+        }
+      },
+      "required": ["status"]
+    },
+    "timestamp": {
+      "type": "number"
+    }
+  },
+  "required": ["measurement", "tags", "fields", "timestamp"]
+}

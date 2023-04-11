@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "measurement": {
+      "const": "automa_alerts",
+      "type": "string"
+    },
+    "tags": {
+      "type": "object",
+      "properties": {
+        "deviceId": {
+          "type": "string"
+        }
+      },
+      "required": ["deviceId"]
+    },
+    "fields": {
+      "type": "object",
+      "properties": {
+        "batteryCharging": {
+          "type": "number",
+          "enum": [0, 1]
+        },
+        "batteryCharged": {
+          "type": "number",
+          "enum": [0, 1]
+        },
+        "vbatAlert": {
+          "type": "number",
+          "enum": [0, 1]
+        },
+        "noCharging": {
+          "type": "number",
+          "enum": [0, 1]
+        }
+      }
+    },
+    "timestamp": {
+      "type": "number"
+    }
+  },
+  "required": ["measurement", "tags", "fields", "timestamp"]
+}

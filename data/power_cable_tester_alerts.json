@@ -1,0 +1,10 @@
+[
+  {
+    "code": 0,
+    "name": "rfidIoError",
+    "notice": "Error occurred with RFID scanner",
+    "category": "error",
+    "value": false,
+    "description": "Rfid error"
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "definitions": {
+    "roles": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string",
+          "enum": [
+            "superAdmin",
+            "admin",
+            "customer",
+            "ceo",
+            "operator",
+            "device"
+          ],
+          "description": "Name of role"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["org", "nonOrg"],
+          "description": "some roles are strictly for the organization hence org other roles does not have any bindings"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": ["title", "name", "type"]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "roles": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/roles"
+      }
+    }
+  }
+}

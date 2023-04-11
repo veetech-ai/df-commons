@@ -1,0 +1,170 @@
+[
+  {
+    "code": 15,
+    "name": "cteuIpError",
+    "notice": "Incorrect IP of CTEU",
+    "category": "error",
+    "value": false,
+    "description": "CTEU IP incorrect"
+  },
+  {
+    "code": 16,
+    "name": "cteuReconnectError",
+    "notice": "Error occured while reconnecting to CTEU",
+    "category": "error",
+    "value": false,
+    "description": "CTEU connection error"
+  },
+  {
+    "code": 17,
+    "name": "motorIo",
+    "notice": "Error occurred with motor inputs/outputs",
+    "category": "error",
+    "value": false,
+    "description": "Motor IO Error"
+  },
+  {
+    "code": 18,
+    "name": "frontendConnectionError",
+    "notice": "Error occured while connecting to frontend",
+    "category": "error",
+    "value": false,
+    "description": "Frontend connection error"
+  },
+  {
+    "code": 19,
+    "name": "rfidIoError",
+    "notice": "Error occurred with RFID scanner",
+    "category": "error",
+    "value": false,
+    "description": "Rfid error"
+  },
+  {
+    "code": 20,
+    "name": "rfidIoWarning",
+    "notice": "Error occurred with RFID scanner",
+    "category": "warning",
+    "value": false,
+    "description": "Rfid warning"
+  },
+  {
+    "code": 0,
+    "name": "camerasRuntimeError",
+    "notice": "No Cameras accessible",
+    "category": "error",
+    "value": false,
+    "description": "No Cameras accessible"
+  },
+  {
+    "code": 1,
+    "name": "getAllCamerasValue",
+    "notice": "Gets all cameras connected, if none: No Cameras connected",
+    "category": "error",
+    "value": false,
+    "description": "No Cameras connected"
+  },
+  {
+    "code": 2,
+    "name": "cameraThreadError",
+    "notice": "Main camera thread crashed",
+    "category": "error",
+    "value": false,
+    "description": "Main camera thread crashed"
+  },
+  {
+    "code": 3,
+    "name": "loadSettingsTypeError",
+    "notice": "Type error in camera load settings",
+    "category": "error",
+    "value": false,
+    "description": "Type error in camera load settings"
+  },
+  {
+    "code": 4,
+    "name": "loadSettingsRuntimeError",
+    "notice": "Runtime error occured during loading camera settings",
+    "category": "error",
+    "value": false,
+    "description": "Runtime error occured during loading camera settings"
+  },
+  {
+    "code": 5,
+    "name": "loadSettingsValue",
+    "notice": "Value error in camera settings",
+    "category": "error",
+    "value": false,
+    "description": "Value error in camera settings"
+  },
+  {
+    "code": 6,
+    "name": "getFrameTypeError",
+    "notice": "Type Error occured while getting frames from camera",
+    "category": "error",
+    "value": false,
+    "description": "Type Error occured while getting frames from camera"
+  },
+  {
+    "code": 7,
+    "name": "getFrameRuntimeError",
+    "notice": "Frame Runtime Error occured while getting frames from camera",
+    "category": "error",
+    "value": false,
+    "description": "Frame Runtime Error occured while getting frames from camera"
+  },
+  {
+    "code": 8,
+    "name": "getFrameValueError",
+    "notice": "Value Error occured while getting frames from camera",
+    "category": "error",
+    "value": false,
+    "description": "Value Error occured while getting frames from camera"
+  },
+  {
+    "code": 9,
+    "name": "getFrameTimeoutError",
+    "notice": "Timeout occured while getting camera frames",
+    "category": "error",
+    "value": false,
+    "description": "Timeout occured while getting camera frames"
+  },
+  {
+    "code": 10,
+    "name": "convertPixelTypeError",
+    "notice": "Converting image type error",
+    "category": "error",
+    "value": false,
+    "description": "Converting image type error"
+  },
+  {
+    "code": 11,
+    "name": "imagePixelAssertionError",
+    "notice": "Converting image type error",
+    "category": "error",
+    "value": false,
+    "description": "Converting image type error"
+  },
+  {
+    "code": 12,
+    "name": "imagePixelValueError",
+    "notice": "Converting image type error",
+    "category": "error",
+    "value": false,
+    "description": "Converting image type error"
+  },
+  {
+    "code": 13,
+    "name": "imageSavingError",
+    "notice": "Error occured while saving image",
+    "category": "error",
+    "value": false,
+    "description": "Error occured while saving image"
+  },
+  {
+    "code": 14,
+    "name": "timeoutError",
+    "notice": "-",
+    "category": "error",
+    "value": false,
+    "description": "Timeout Error Unknown"
+  }
+]

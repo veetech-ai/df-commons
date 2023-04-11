@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "code": {
+        "type": "number"
+      },
+      "name": {
+        "type": "string",
+        "enum": ["batteryCharging", "batteryCharged", "vbatAlert", "noCharging"]
+      },
+      "value": {
+        "anyOf": [
+          {
+            "type": "number",
+            "enum": [0, 1]
+          },
+          {
+            "type": "boolean",
+            "enum": [false, true]
+          }
+        ]
+      },
+      "category": {
+        "type": "string",
+        "enum": ["error", "warning", "info"]
+      },
+      "description": {
+        "type": "string"
+      }
+    },
+    "additionalProperties": false,
+    "required": ["code", "name", "category"]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://viaphoton/definitions/validations.json",
+  "type": "object",
+  "additionalProperties": false,
+  "definitions": {
+    "validation": {
+      "anyOf": [
+        {
+          "type": "number",
+          "enum": [0, 1]
+        },
+        {
+          "type": "boolean",
+          "enum": [false, true]
+        }
+      ]
+    }
+  }
+}

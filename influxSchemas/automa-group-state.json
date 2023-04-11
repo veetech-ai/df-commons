@@ -1,0 +1,91 @@
+{
+  "type": "object",
+  "properties": {
+    "measurement": {
+      "const": "automa_group_state",
+      "type": "string"
+    },
+    "tags": {
+      "type": "object",
+      "properties": {
+        "groupId": {
+          "type": "string",
+          "description": "id of device"
+        },
+        "userId": {
+          "type": "string",
+          "description": "id of user who changed the state"
+        },
+        "p": {
+          "type": "string",
+          "description": "state of AC 1-> ON, 0 -> OFF"
+        },
+        "m": {
+          "type": "string",
+          "description": "mode of AC set at the ac"
+        }
+      },
+      "required": ["groupId"]
+    },
+    "fields": {
+      "type": "object",
+      "properties": {
+        "t": {
+          "type": "number",
+          "minimum": 16,
+          "maximum": 32,
+          "description": "temperature set at the ac"
+        },
+        "f": {
+          "type": "number",
+          "description": "fan speed"
+        },
+        "sv": {
+          "type": "number",
+          "description": "fan speed"
+        },
+        "sh": {
+          "type": "number",
+          "description": "fan speed"
+        },
+        "svp": {
+          "type": "number",
+          "description": "fan speed"
+        },
+        "shp": {
+          "type": "number",
+          "description": "fan speed"
+        },
+        "rt": {
+          "type": "number",
+          "description": "Room temperature"
+        },
+        "fl": {
+          "type": "number",
+          "description": "feeling"
+        },
+        "s`": {
+          "type": "number",
+          "description": "sleep mode"
+        },
+        "h": {
+          "type": "number",
+          "description": "health mode"
+        },
+        "b": {
+          "type": "number",
+          "description": "some button pressed. This exist in some old remotes"
+        },
+        "deviceIds": {
+          "type": "string",
+          "description": "id of devices in the group at the time of state change addition"
+        }
+      },
+      "required": ["t"]
+    },
+    "timestamp": {
+      "type": "number"
+    }
+  },
+  "required": ["measurement", "tags", "fields", "timestamp"]
+}
