@@ -1,3 +1,3 @@
-# viaPhoton commons
+# Digital Fairways commons
 
-this repo include the common schema anc contracts between services
+this repo include the common schema and contracts between services
